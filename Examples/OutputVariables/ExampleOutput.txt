@@ -1,0 +1,8 @@
+(OnSite) $
+pet-name = {
+  "id" = "Mrs.opossum"
+  "keepers" = tomap(null) /* of string */
+  "length" = 1
+  "prefix" = "Mrs"
+  "separator" = "."
+}
