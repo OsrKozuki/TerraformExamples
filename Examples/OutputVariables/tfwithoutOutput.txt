@@ -1,0 +1,90 @@
+# local_file.PetOne:
+resource "local_file" "PetOne" {
+    content              = "My favorite pet is a Mrs.moose"
+    content_base64sha256 = "CkhaANJTsubwqwAh2XcBQsJ5iB39vQ0+mb1WHrBVfcM="
+    content_base64sha512 = "sw0ZThRbvYqmUoigtHlgnQdVGEIVxxSlfkgSUsIgNeTsYtIH8tNDZ2eK+slPVJbd3175Srm2+x0EIzYAM8v1mA=="
+    content_md5          = "3fed320630ba73dd1f5824f5e3d64931"
+    content_sha1         = "681233334318aa5efaa31e5fea0d71942ed5e086"
+    content_sha256       = "0a485a00d253b2e6f0ab0021d9770142c279881dfdbd0d3e99bd561eb0557dc3"
+    content_sha512       = "b30d194e145bbd8aa65288a0b479609d0755184215c714a57e481252c22035e4ec62d207f2d34367678afac94f5496dddf5ef94ab9b6fb1d0423360033cbf598"
+    directory_permission = "0777"
+    file_permission      = "0777"
+    filename             = "MyPet.txt"
+    id                   = "681233334318aa5efaa31e5fea0d71942ed5e086"
+}
+
+# random_integer.order1:
+resource "random_integer" "order1" {
+    id     = "6890"
+    max    = 99999
+    min    = 1
+    result = 6890
+}
+
+# random_integer.order2:
+resource "random_integer" "order2" {
+    id     = "82270"
+    max    = 222222
+    min    = 1
+    result = 82270
+}
+
+# random_pet.PetTwo:
+resource "random_pet" "PetTwo" {
+    id        = "Mrs.moose"
+    length    = 1
+    prefix    = "Mrs"
+    separator = "."
+}
+
+# random_uuid.id1:
+resource "random_uuid" "id1" {
+    id     = "e1dd1e36-7809-606d-5b45-d09dea0f4359"
+    result = "e1dd1e36-7809-606d-5b45-d09dea0f4359"
+}
+
+# random_uuid.id2:
+resource "random_uuid" "id2" {
+    id     = "3a3c9f39-e85a-caf3-5b1d-1728efcfc767"
+    result = "3a3c9f39-e85a-caf3-5b1d-1728efcfc767"
+}
+
+# random_uuid.id3:
+resource "random_uuid" "id3" {
+    id     = "3b268982-7675-e964-efd9-76fe217bef69"
+    result = "3b268982-7675-e964-efd9-76fe217bef69"
+}
+
+# random_uuid.id4:
+resource "random_uuid" "id4" {
+    id     = "8a170be1-0893-6b41-da37-95db1dc148a3"
+    result = "8a170be1-0893-6b41-da37-95db1dc148a3"
+}
+
+# random_uuid.id5:
+resource "random_uuid" "id5" {
+    id     = "31e91f2d-bf92-25c3-f49d-05fefe8c789b"
+    result = "31e91f2d-bf92-25c3-f49d-05fefe8c789b"
+}
+
+# random_uuid.id6:
+resource "random_uuid" "id6" {
+    id     = "249ae9cd-4df0-32d0-0029-beaf688435eb"
+    result = "249ae9cd-4df0-32d0-0029-beaf688435eb"
+}
+
+# random_uuid.id7:
+resource "random_uuid" "id7" {
+    id     = "7848534f-6786-58eb-7ddb-7010951abd68"
+    result = "7848534f-6786-58eb-7ddb-7010951abd68"
+}
+
+
+Outputs:
+
+pet-name = {
+    id        = "Mrs.moose"
+    length    = 1
+    prefix    = "Mrs"
+    separator = "."
+}
